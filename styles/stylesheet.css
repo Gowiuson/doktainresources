@@ -29,6 +29,9 @@ a {
   color: rgb(253, 112, 112);
   text-decoration: none;
 }
+.brand img{
+  width: 280px;
+}
 .navbar {
   min-height: 70px;
   display: flex;
@@ -72,7 +75,7 @@ a {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 97px;
+  top: 88px;
   gap: 0;
   flex-direction: column;
   background-color: white;
@@ -167,50 +170,18 @@ a {
 }
 .about .body span {
   font-size: 18px;
-  color: rgb(240, 52, 52);
+  background-color: rgba(2, 35,
+    95,0.19);
+  color: rgba(2, 35,95);
+  padding: 5px;
+  font-weight: 600;
 }
-.about-toggle {
-  display: none;
-}
-.about-toggle.active {
-  display: block;
-}
-.more {
-  padding: 15px 40px;
-  background-color: rgb(2, 35, 95);
-  color: white;
-  margin: 10px 0;
-  border-radius: 8px;
-}
-.more:hover {
-  cursor: pointer;
-  background-color: rgb(4, 58, 158);
-}
-/* .mission {
-  margin-top: 80px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.mission .body {
-  margin-top: 10px;
-  padding: 10px 22px;
-  text-align: left;
-}
-.mission .sub-text h3 {
-  font-size: 18px;
-  width: 150px;
-  color: rgb(240, 52, 52);
-  border-bottom: 1px solid rgb(240, 52, 52);
-  border-left: 1px solid rgb(240, 52, 52);
-} */
+
 
 /* services */
 .services {
   position: relative;
-  margin: 150px 0 55px 0;
+  margin: 50px 0 55px 0;
   background-color: rgb(243, 243, 243);
   padding: 30px 0;
 }
@@ -234,7 +205,7 @@ a {
   background-repeat: no-repeat;
 }
 .services .img2 {
-  background-image: url("../images/procurement.png");background-size: cover;
+  background-image: url("../images/procurement.jpeg");background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -242,6 +213,12 @@ a {
   background-image: url("../images/personnel.png");background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.services .img4{
+  background-image: url("../images/vessel1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .services .content {
   padding: 8px;
@@ -259,35 +236,38 @@ a {
 /* partners */
 .partner {
 padding: 15px;
-margin: 150px 0 55px 0;
+margin: 50px 0 55px 0;
 }
 .items{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center ;
   align-items: center;
   text-align: center;
+
 }
 .item{
   width: 200px;
-  height:200px;
   padding: 40px;
-  margin: 0 auto;
   align-content: center;
 }
-
 .item img {
   width: 100%;
 }
+.item .img {
+margin-bottom: 15px;
+}
 .eastern-steel img{
   background-color: 000;
-  width: 200px;
 } 
+.item span {
+  font-weight: 600;
+}
 
 /* enquiry */
 
 .enquiry{
-  margin: 150px 0 55px 0;
+  margin: 10px 0 55px 0;
   background-color: rgb(243, 243, 243);
   padding: 30px 15px;
 }
@@ -308,38 +288,47 @@ margin: 150px 0 55px 0;
 .form .name input:focus {
   border: 1px solid rgb(2, 35, 95);
 }
-.btn {
-  background-color: rgb(2, 35, 95);
+.btnn {
+  border: 1px solid rgb(2, 35, 95);
   padding: 10px 25px;
-  color: white;
+  color: rgb(2, 35, 95);
+  outline: 0;
   border-radius: 8px;
  box-shadow: 2px 2px 2px rgb(7, 55, 146);
 }
-.btn:active {
-  transform:rotateX(4deg)
+.btnn:active {
+  transform:rotateX(4deg);
+  outline:0;
 }
 
 /* footer */
 .footer {
-  margin-top: 150px;
+  margin-top: 50px;
+  padding-top: 20px;
   width: 100%;
   color: white;
   background: rgb(2, 35, 95);
 }
-.contact {
-  padding: 20px;
-}
 .main {
-  margin-top: 8px;
+  color: #d3d3d3;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.office h4{
-  padding: 8px 0;
+.location,.numbers,.mail {
+  margin-top: 20px;
 }
-.cont {
+.footer h6{
   padding: 8px;
+  margin: 0;
+}
+.footer p {
+  padding: 0 8px;
+  margin: 0;
 }
 .foot {
   border-top: 1px solid white;
-  padding: 25px;
+  padding: 25px !important;
   text-align: center;
+  font-size: 14px;
+  margin-top: 20px !important;
 }

@@ -6,20 +6,19 @@ $(document).ready(function() {
 	  	margin: 30,
 	  	loop: true,
 	  	nav: false,
-	  	dots: false,
+	  	dots: true,
 	  	autoplay: true,
 	  	autoplayTimeout: 5000,
 	  	responsive:{
 	        0:{
-	            items:1,
+	            items:2,
 	        },
 	        600:{
-	            items:2,
+	            items:1,
 	        },
 	        1200:{
 				items:4,
-				nav:true,
-	            loop:false
+				
 	        }
 	    }
   	});
@@ -38,12 +37,7 @@ $(document).ready(function() {
 	});
 	
 });
-const about_toggle =document.getElementById('about-toggle');
-const more = document.getElementById('more');
-    
-more.addEventListener('click', ()=>{
-  about_toggle.classList.toggle('active');
-})
+
   
 // hamburger
 const hamburger = document.querySelector('.hamburger');
