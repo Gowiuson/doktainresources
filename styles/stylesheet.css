@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+p {font-size: 16px;}
+.header-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: white;
+}
+.sticky {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  color: rgb(253, 112, 112);
+  text-decoration: none;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+}
+.nav-link{
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.6s ease;
+  padding: 10px;
+  color: rgb(2, 35, 95);
+}
+.nav-link:hover{
+  color: rgb(7, 89, 241);
+  cursor: pointer;
+}
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: rgb(2, 35, 95);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 97px;
+  gap: 0;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  padding: 10px;
+}
+.nav-item{
+  margin: 20px 0;
+  padding: 20px 0;
+}
+.nav-menu.active {
+  left: 0;
+}
+
+/* about */
+.about {
+  width: 100%;
+  margin: 0 0 55px 0;
+}
+.cover-img {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 500px;
+  margin-bottom: 50px;
+  background-image: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.cover-text{
+  max-width: 400px;
+  border: 6px solid rgb(2, 35, 95);
+  font-size: 54px;
+  font-weight: 900;
+  text-shadow: 0px 3px 2px #362A43
+}
+.cover-img span{
+  font-size: 16px;
+  color: rgb(255, 1, 1);
+}
+.cover-img ul {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.cover-img ul li {
+  display: block;
+  margin: 10px 0;
+  padding: 0 5px;
+  color: white;
+  font-weight: 900;
+}
+.main-text h2 {
+  font-size: 35px;
+  color: rgb(2, 35, 95);
+  margin-bottom:13px;
+  text-align: center;
+}
+.main-text p {
+  text-align: center;
+  padding: 20px;
+}
+.m-t-l {
+  background-color: rgb(2, 35, 95);
+  height: 1px;
+  width: 150px;
+  margin: 0 auto;
+}
+.about-text{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-text .body {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 10px 22px;
+}
+.about .body p {
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.about .body span {
+  font-size: 18px;
+  color: rgb(240, 52, 52);
+}
+.about-toggle {
+  display: none;
+}
+.about-toggle.active {
+  display: block;
+}
+.more {
+  padding: 15px 40px;
+  background-color: rgb(2, 35, 95);
+  color: white;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+.more:hover {
+  cursor: pointer;
+  background-color: rgb(4, 58, 158);
+}
+/* .mission {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mission .body {
+  margin-top: 10px;
+  padding: 10px 22px;
+  text-align: left;
+}
+.mission .sub-text h3 {
+  font-size: 18px;
+  width: 150px;
+  color: rgb(240, 52, 52);
+  border-bottom: 1px solid rgb(240, 52, 52);
+  border-left: 1px solid rgb(240, 52, 52);
+} */
+
+/* services */
+.services {
+  position: relative;
+  margin: 150px 0 55px 0;
+  background-color: rgb(243, 243, 243);
+  padding: 30px 0;
+}
+.services-images {
+  width: 100%;
+  display: block;
+  padding: 20px;
+}
+.services-images .img{
+  width: 100%;
+  margin-bottom: 50px;
+  border: 6px solid white;
+}
+.services-images .image {
+  height: 300px;
+}
+.services-images .img1 {
+  background-image: url("../images/diving_services.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services .img2 {
+  background-image: url("../images/procurement.png");background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services .img3 {
+  background-image: url("../images/personnel.png");background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services .content {
+  padding: 8px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: rgb(2, 35, 95);
+}
+.services .content span {
+  color: rgb(255, 255, 255);
+  margin: 5px;
+}
+
+
+/* partners */
+.partner {
+padding: 15px;
+margin: 150px 0 55px 0;
+}
+.items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.item{
+  width: 200px;
+  height:200px;
+  padding: 40px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.item img {
+  width: 100%;
+}
+.eastern-steel img{
+  background-color: 000;
+  width: 200px;
+} 
+
+/* enquiry */
+
+.enquiry{
+  margin: 150px 0 55px 0;
+  background-color: rgb(243, 243, 243);
+  padding: 30px 15px;
+}
+.form .name {
+  margin: 20px 0;
+}
+.form .name input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(168, 166, 166);
+  outline: 0;
+  padding: 8px;
+  border-radius: 3px;
+}
+.form .name.enq input {
+  height: 100px;
+}
+.form .name input:focus {
+  border: 1px solid rgb(2, 35, 95);
+}
+.btn {
+  background-color: rgb(2, 35, 95);
+  padding: 10px 25px;
+  color: white;
+  border-radius: 8px;
+ box-shadow: 2px 2px 2px rgb(7, 55, 146);
+}
+.btn:active {
+  transform:rotateX(4deg)
+}
+
+/* footer */
+.footer {
+  margin-top: 150px;
+  width: 100%;
+  color: white;
+  background: rgb(2, 35, 95);
+}
+.contact {
+  padding: 20px;
+}
+.main {
+  margin-top: 8px;
+}
+.office h4{
+  padding: 8px 0;
+}
+.cont {
+  padding: 8px;
+}
+.foot {
+  border-top: 1px solid white;
+  padding: 25px;
+  text-align: center;
+}

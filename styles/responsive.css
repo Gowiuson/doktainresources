@@ -1,0 +1,31 @@
+@media(min-width:798px){
+  .hamburger {
+    display: none;
+  }
+  .brand {
+    width: 350px;
+  }
+  .brand img {
+    width: 100%;
+  }
+  .nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    background-color: white;
+    padding:0px;
+  }
+  .nav-item {
+    margin: 16px 0;
+    padding: 0;
+  }
+  .nav-link {
+    padding: 0 5px; 
+  }
+}
