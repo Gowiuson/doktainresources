@@ -193,11 +193,13 @@ a {
   width: 100%;
   display: block;
   padding: 20px;
+  
 }
 .services-images .img{
   width: 100%;
   margin-bottom: 50px;
   border: 6px solid white;
+  background-color: rgb(2, 35, 95);
 }
 .services-images .image {
   height: 300px;
@@ -229,11 +231,11 @@ a {
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: rgb(2, 35, 95);
 }
 .services .content span {
   color: rgb(255, 255, 255);
   margin: 5px;
+  font-size: 14px;
 }
 
 
@@ -248,7 +250,7 @@ margin: 50px 0 55px 0;
   justify-content: center ;
   align-items: center;
   text-align: center;
-
+  padding: 0 20px;
 }
 .item{
   width: 200px;
@@ -267,6 +269,11 @@ margin-bottom: 15px;
 .item span {
   font-weight: 600;
 }
+.item .img .lakedale {
+  font-weight: 900;
+  color: rgb(78, 151, 4);
+}
+
 
 /* enquiry */
 
