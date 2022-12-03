@@ -1,4 +1,8 @@
 @media(min-width:650px) {
+  /* about */
+  .about .body {
+    padding: 0 30px;
+  }
   /* services */
   .services-images .img {
     background-color: rgb(2, 35, 95);
@@ -11,6 +15,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  /* enquiry */
+
+  .enquiry {
+    padding: 30px 30px;
+  }
+  .enquiry .main-text{
+    border: 1px solid red;
+    padding: 0 30px;
+  }
+  
 
 }
 @media(min-width:798px){
