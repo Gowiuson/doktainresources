@@ -14,7 +14,7 @@ body {
 p {font-size: 16px;}
 .header-section {
   margin: 0 auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   background-color: white;
 }
 .sticky {
@@ -30,14 +30,15 @@ a {
   text-decoration: none;
 }
 .brand img{
-  width: 280px;
+  width: 290px;
 }
+
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 24px;
+  padding: 10px 0px;
 }
 .nav-link{
   text-transform: uppercase;
@@ -75,7 +76,7 @@ a {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 80px;
+  top: 75px;
   gap: 0;
   flex-direction: column;
   background-color: white;
@@ -192,12 +193,10 @@ a {
 .services-images {
   width: 100%;
   display: block;
-  padding: 20px;
-  
 }
 .services-images .img{
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   border: 6px solid white;
   background-color: rgb(2, 35, 95);
 }
@@ -280,7 +279,7 @@ margin-bottom: 15px;
 .enquiry{
   margin: 10px 0 55px 0;
   background-color: rgb(243, 243, 243);
-  padding: 30px 15px;
+  padding: 30px 0;
 }
 .form .name {
   margin: 20px 0;
@@ -321,21 +320,21 @@ margin-bottom: 15px;
   padding-top: 10px;
 }
 .main {
-  color: #d3d3d3;
+  color: #bebdbd;
   text-transform: uppercase;
   font-weight: 600;
-}
-.contact{
-  padding-left: 10px;
 }
 .location,.numbers,.mail {
   margin-top: 20px;
 }
 .footer h6{
+  font-size: 14px;
   padding: 8px;
-  margin: 0;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
 }
-.footer p {
+.contact p {
+  font-size: 13px;
   padding: 0 8px;
   margin: 0;
 }
@@ -343,6 +342,6 @@ margin-bottom: 15px;
   border-top: 1px solid white;
   padding: 25px !important;
   text-align: center;
-  font-size: 10px !important;
-  margin-top: 20px !important;
+  font-size: 13px;
+  margin-top: 20px;
 }

@@ -1,8 +1,4 @@
 @media(min-width:650px) {
-  /* about */
-  .about .body {
-    padding: 0 30px;
-  }
   /* services */
   .services-images .img {
     background-color: rgb(2, 35, 95);
@@ -13,7 +9,7 @@
   .services-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
   }
   /* enquiry */
 
@@ -21,47 +17,72 @@
     padding: 30px 30px;
   }
   .enquiry .main-text{
-    border: 1px solid red;
     padding: 0 30px;
   }
-  
-
+  .foot {
+    font-size: 14px;
+  }
 }
-@media(min-width:798px){
+
+@media(min-width:750px){
   .hamburger {
     display: none;
   }
+  .navbar {
+    padding: 10px 0px !important;
+  }
   .brand {
-    width: 350px;
+    width: 270px;
   }
   .brand img {
     width: 100%;
   }
   .nav-menu {
-    width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-self: flex-end;
     align-items: center;
-    gap: 5px;
-    position: relative;
-    left: 0;
+    width: fit-content;
+    position:relative;
+    left: 0px;
+    right: 0;
     top: 0;
+    margin: 0;
     flex-direction: row;
-    background-color: white;
-    padding:0px;
+    padding:0; 
+  } 
+  .nav-link {
+    padding: 0;
+    font-size: 13px;
+    font-weight: 700;
   }
   .nav-item {
-    margin: 16px 0;
+    margin: 0;
     padding: 0;
   }
-  .nav-link {
-    padding: 0 5px; 
-  }
+
+  /*  */
+}
+@media(min-width:900px) {
+  .navbar {
+      padding: 10px 22px !important;
+    }
+  /* .services-images {
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  } */
 }
 @media(min-width:1200px) {
+  .navbar {
+      padding: 10px 55px !important;
+    }
+  .brand {
+    width: 290px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
   .cover-img{
-    /* background-image: none;
-    border: 1px solid red; */
     display: none;
     overflow: hidden;
   }
@@ -74,11 +95,13 @@
   height: 500px;
   }
   
-  /* .cover-text, .cover-img span, .cover-img ul {
-    position: absolute;
-    z-index: 1;
-  } */
+
   .desktop-carousel .img img {
     width: 100%;
+  }
+  .services-images {
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
   }
 }
