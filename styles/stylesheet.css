@@ -279,11 +279,16 @@ margin: 50px 0 55px 0;
 }
 .item h5 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
-.item .ixar img, .item .rgec img, .item .mario img {
+.item .mario img {
   width: 120px;
 }
+.item .ixar img,
+.item .rgec img {
+  width: 100px;
+}
+
 .item .img {
 margin-bottom: 15px;
 }
