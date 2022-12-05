@@ -77,6 +77,10 @@
   .abt-cover-img{
     display: none;
   }
+  .services-images .img {
+    margin-top: 35px;
+
+    }
 }
 @media(min-width:1200px) {
   .navbar {

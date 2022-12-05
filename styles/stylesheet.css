@@ -13,14 +13,7 @@ body {
 }
 p {font-size: 16px;}
 .header-section {
-  margin: 0 auto;
-  /* max-width: 1200px; */
   background-color: white;
-}
-.sticky {
-  position: fixed;
-  top:0;
-  width: 100%;
 }
 li {
   list-style: none;
@@ -32,7 +25,6 @@ a {
 .brand img{
   width: 250px;
 }
-
 .navbar {
   min-height: 70px;
   display: flex;
@@ -162,6 +154,8 @@ a {
 .main-text p {
   text-align: center;
   padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .m-t-l {
   background-color: rgb(2, 35, 95);
@@ -214,7 +208,7 @@ a {
 }
 .services-images .img{
   width: 100%;
-  margin-bottom: 25px;
+  margin: 25px 0;
   border: 6px solid white;
   background-color: rgb(2, 35, 95);
   box-shadow: 1px 1px 7px rgb(93, 93, 94);
@@ -268,11 +262,11 @@ margin: 50px 0 55px 0;
   justify-content: center ;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 25px;
 }
 .item{
   width: 200px;
-  padding: 40px;
+  padding: 30px 25px;
   align-content: center;
 }
 .item img {
