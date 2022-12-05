@@ -60,6 +60,9 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
+          <li class="nav-item d-none d-lg-block">
+            <a href="#enquiry" class="nav-link btnn"> Enquiry</a>
+          </li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -73,16 +76,17 @@
   <!-- about section -->
   <div class="about wow fadeInUp" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp" id="about">
 
-    <div class="desktop-carousel owl-carousel">
+    <div class="desktop-carousel owl-carousel d-none d-xl-block">
+      
       <div class="img img1">
         <img src="images/cover.jpg" alt="">
       </div>
-      <div class="img img2">
-        <img src="images/procurement.jpeg" alt="">
+      <div class="img img3">
+        <img src="images/monck-01.jpg" alt="">
+      </div> 
+      <div class="img img3">
+        <img src="images/oil-rig.jpg" alt="">
       </div>
-      <!-- <div class="img img3">
-              <img src="images/vessel2.png" alt="">
-            </div> -->
     </div>
     <div class="cover-img">
     
@@ -96,20 +100,44 @@
     </div>
 
     <div class="container">
-
-    
-      
       <div class="about-text">
         <div class="main-text">
           <h2>About Our Company</h2>
           <div class="m-t-l"></div>
         </div>
-        <div class="body">
-          <p><span>DOKTAIN RESOURCES LTD (DRL)</span> is an indigenous Marine, Engineering servicing company, registered to provide wide range of Building and Civil Works, Maintenance of mechanical and electrical component services, Corrosion control, Marine Construction and Procurement, Security services,        Procurement of Marine and Industrial materials. We are positioned to render services to both public and private sectors of the Nigerian economy. DRL was incorporated as a private business in 2002 before operating for about ten (10) in Oil and Gas sector with a business name- DOKTAIN RESOURCES LTD (DRL) with current share capital of 25 million.</p>
-          <p>DRL is the authorised distributors of RGEC products (pneumatic fenders and other marine spare parts) in Nigeria, Gabon, and Equatorial Guinea. Also, the distributors of all types of pipes for Eastern China Steels in Nigeria, Gabon, Equatorial Guinea, and Cameroon.</p>
+        <div class="row">
+
+        
+          <div class="body col-12 col-lg-8">
+            <p><span>DOKTAIN RESOURCES LTD (DRL)</span> is an indigenous Marine, Engineering servicing company, registered to provide wide range of Building and Civil Works, Maintenance of mechanical and electrical component services, Corrosion control, Marine Construction and Procurement, Security services,        Procurement of Marine and Industrial materials. We are positioned to render services to both public and private sectors of the Nigerian economy. DRL was incorporated as a private business in 2002 before operating for about ten (10) in Oil and Gas sector with a business name- DOKTAIN RESOURCES LTD (DRL) with current share capital of 25 million.</p>
+            <p>DRL is the authorised distributors of RGEC products (pneumatic fenders and other marine spare parts) in Nigeria, Gabon, and Equatorial Guinea. Also, the distributors of all types of pipes for Eastern China Steels in Nigeria, Gabon, Equatorial Guinea, and Cameroon.</p>
+          </div>
+          <div class="countries-operation d-none d-lg-block col-lg-4 mt-4">
+            <h6 class="mb-3">Countries of operation</h6>
+            <ul>
+              <li>
+                <p>Nigeria</p>
+                <img src="/images/nigeria-flag.jpg" alt="Nigeria-flag" style="width:85px; height:65px;">
+              </li>
+              <li class="mt-2">
+                <p>Gabon</p>
+                <img src="images/gabon-flag.png" alt="Gabon-flag" style="width:85px; height:65px;">
+              </li>
+              <li class="mt-2">
+                <p>Cameroon</p>
+                <img src="images/cameroon-flag.png" alt="Cameroon-flag" style="width:85px; height:65px;">
+              </li>
+              <li class="mt-2">
+                <p>Equatorial Guinea</p>
+                <img src="images/equatorial-guinea-flag.jpg" alt="Equatorial-guinea-flag" style="width:85px; height:65px;">
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      
     </div>
+    <div class="abt-cover-img"></div>
   </div>
 
   <!-- services -->
@@ -220,7 +248,12 @@
               <div class="img">
                 <h4>P.O. Umoru & co <br> (Legal Consultant)</h4>
               </div>
-              <span></span>
+            </div>
+            <div class="item">
+              <div class="img">
+                <h4>DIMAFRIC/NIM SHIPPING/DIMOIL</h4>
+              </div>
+              <span>Copenhagen Denmark</span>
             </div>
           </div>
           
@@ -230,7 +263,7 @@
   </div>
   
 
-  <div class="enquiry wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight">
+  <div class="enquiry wow fadeInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight" id="enquiry">
     <div class="container">
       <div class="enquiry-content">
         <div class="main-text">
@@ -238,7 +271,7 @@
           <p>Please fill the form with the correct details and we will get back to you within the next 48hrs</p>
         </div>
         <div class="row justify-content-center">
-          <div class="form col-md-10 col-lg-8">
+          <form action="" method="post" class="form col-md-10 col-lg-8">
             <div class="name">
               <input type="text" placeholder="First Name" name="fname">
             </div>
@@ -258,11 +291,11 @@
               <input type="tel" placeholder="Phone" name="tel">
             </div>
             <div class="name enq">
-              <input type="text" placeholder="Enquiry Message" name="company">
+              <textarea type="text" placeholder="Enquiry Message" name="enquiry"></textarea>
             </div>
         
-            <button class="btnn" type="submit">Submit</button>
-          </div>
+            <input class="btnn" type="submit" name="Submit">
+          </form>
         </div>
       </div>
     </div>

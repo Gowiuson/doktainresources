@@ -23,7 +23,7 @@ $(document).ready(function() {
 	    }
   	});
 		$(".desktop-carousel.owl-carousel").owlCarousel({
-	  	items: -1,
+	  	items: 0,
 	  	margin: 30,
 	  	loop: true,
 	  	nav: false,
