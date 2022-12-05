@@ -257,18 +257,17 @@ padding: 15px 0;
 margin: 50px 0 55px 0;
 }
 .items{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center ;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   padding: 25px;
 }
 .item{
-  width: 200px;
+  width: 120px;
   padding: 10px;
   align-content: center;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,7 +278,7 @@ margin: 50px 0 55px 0;
 }
 .item h5 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
 }
 .item .mario img {
   width: 120px;
