@@ -2,8 +2,8 @@ $(document).ready(function() {
     new WOW().init();
 
 	$(".items.owl-carousel").owlCarousel({
-	  	items: 4,
-	  	margin: 30,
+	  	items: 1,
+	  	margin: 10,
 	  	loop: true,
 	  	nav: false,
 	  	dots: true,
@@ -14,6 +14,9 @@ $(document).ready(function() {
 	            items:2,
 	        },
 	        600:{
+	            items:2,
+	        },
+					750:{
 	            items:3,
 	        },
 	        1200:{
