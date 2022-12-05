@@ -266,11 +266,19 @@ margin: 50px 0 55px 0;
 }
 .item{
   width: 200px;
-  padding: 30px 15px;
+  padding: 10px;
   align-content: center;
+  border: 1px solid red;
 }
 .item img {
   width: 100%;
+}
+.item h5 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.item .ixar img, .item .rgec img, .item .mario img {
+  width: 160px;
 }
 .item .img {
 margin-bottom: 15px;
