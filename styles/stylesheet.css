@@ -265,7 +265,7 @@ margin: 50px 0 55px 0;
   padding: 25px;
 }
 .item{
-  width: 200px;
+  width: 220px;
   padding: 30px 25px;
   align-content: center;
 }
@@ -284,6 +284,9 @@ margin-bottom: 15px;
 .item .img .lakedale {
   font-weight: 900;
   color: rgb(78, 151, 4);
+}
+.item.nim {
+  width: 250px;
 }
 
 
