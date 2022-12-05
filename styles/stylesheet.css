@@ -68,7 +68,7 @@ a {
 .nav-menu {
   position: fixed;
   left: -100%;
-  top: 75px;
+  top: 70px;
   gap: 0;
   flex-direction: column;
   background-color: white;
@@ -257,17 +257,11 @@ padding: 15px 0;
 margin: 50px 0 55px 0;
 }
 .items{
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center ;
-  align-items: center;
-  text-align: center; */
   padding: 25px;
 }
 .item{
   width: 120px;
-  padding: 10px;
-  align-content: center;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,23 +277,29 @@ margin: 50px 0 55px 0;
 .item .mario img {
   width: 120px;
 }
-.item .ixar img,
-.item .rgec img {
-  width: 100px;
+.item .marteli img{
+  width: 150px;
 }
-
+.item .ixar img, 
+.item .rgec img {
+  width: 110px;
+}
 .item .img {
 margin-bottom: 15px;
+text-align: center;
 }
 .eastern-steel img{
   background-color: 000;
+  width: 190px;
 } 
 .item span {
   font-weight: 600;
+  text-align: center;
 }
 .item .img .lakedale {
   font-weight: 900;
   color: rgb(78, 151, 4);
+  font-size: 30px;
 }
 
 

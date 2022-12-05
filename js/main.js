@@ -1,30 +1,5 @@
 $(document).ready(function() {
     new WOW().init();
-
-	$(".items.owl-carousel").owlCarousel({
-	  	items: 1,
-	  	margin: 30,
-	  	loop: true,
-	  	nav: false,
-	  	dots: true,
-	  	autoplay: true,
-	  	autoplayTimeout: 5000,
-	  	responsive:{
-	        0:{
-	            items:2,
-	        },
-	        600:{
-	            items:2,
-	        },
-					750:{
-	            items:3,
-	        },
-	        1200:{
-				items:4,
-				
-	        }
-	    }
-  	});
 		$(".desktop-carousel.owl-carousel").owlCarousel({
 	  	items: 0,
 	  	margin: 30,
@@ -41,7 +16,6 @@ $(document).ready(function() {
 	        }
 	    }
   	});
-
   	$('.popup-video').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
