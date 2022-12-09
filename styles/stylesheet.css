@@ -14,6 +14,10 @@ body {
 p {font-size: 16px;}
 .header-section {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 4px rgb(93, 93, 94, 0.5);
 }
 li {
   list-style: none;
@@ -22,6 +26,7 @@ a {
   color: rgb(253, 112, 112);
   text-decoration: none;
 }
+
 .brand img{
   width: 250px;
 }
